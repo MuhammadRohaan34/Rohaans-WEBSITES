@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {  
+    text-align: center;
+    background-color: rgb(106, 84, 250);
+}
+nav{
+    background-color: azure;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    
+    overflow: hidden;
+}
+li {
+    font-size: 20px;
+    float: left;
+    padding: 15px;
+    margin: 15px;
+}
+li a {
+    display: block;
+}
+li a:hover {
+    background-color: rgb(60, 60, 224);
+    color: rgb(255, 255, 255);
+}
+</style>
+<body>
+   
+    <nav>
+        <ul>
+                        <li><a href="index.html">Home</a></li>
+              <li><a href="6-about.html">About</a></li> 
+               <li><a href="6-contact.html">Contact</a></li>
+               <li><a href="6-about website.html">About website</a></li>
+        </ul>
+    </nav>
+    <h1 style="color: rgb(221, 255, 0);">My Portfolio</h1>
+    Hi my name is Rohaan.I am in grade 6 I like to do coding and crafting.
+    my birthday is on 3rd April .I study at crescent model higher secondary 
+    school .
+    <h1>Some of my hobbys:</h1>
+    <h5>Study</h5>
+ 
+   <img src="https://www.kiddiematters.com/wp-content/uploads/2017/03/Depositphotos_61894645_original-1024x708.jpg" alt="" style="width: 400px;">
+     <p id="Study-info"></p>
+   <button onclick="Study();">Read more!</button>
+
+<h5>Playing Monopoly</h5>
+<img src="https://www.toykingdom.com.ph/cdn/shop/articles/how_to_play_monopoly_1200x.png?v=1708417379" alt="" style="width: 400px;">
+    <p id="PlayingMonopoly-info"></p>
+<button onclick="PlayingMonopoly();">Read more!</button>
+
+<h1>My favourite games</h1>
+<ol>
+   
+    <h3 style="color: rgb(3, 3, 28);">Grand Theft Auto 3</h3>
+    <h3 style="color: rgb(175, 255, 3);">Subway Surfers</h3>
+    <h3 style="color: rgb(34, 245, 7);">Traffic Racer</h3>
+    <h3 style="color: rgb(202, 245, 91);">Contra</h3>
+    <h3 style="color: rgb(253, 9, 9);">Super mario bros</h3>
+    <h3 style="color: rgb(244, 122, 15);">Traffic Rider</h3>
+</ol>
+<script>
+function Study() {
+    document.getElementById("Study-info").innerHTML = 
+    "I like to do study because it enhances mind power and we learn new things from it"
+}
+    function PlayingMonopoly() {
+        document.getElementById("PlayingMonopoly-info").innerHTML = 
+        "I like to play monopoly because its fun to play and it develops a sense of business"
+           }
+    
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
