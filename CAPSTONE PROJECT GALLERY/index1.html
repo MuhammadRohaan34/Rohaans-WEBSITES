@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Capstone project</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav{
+    overflow: hidden;
+    background-color: aqua;
+}
+.topnav a {
+    float: left;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: aliceblue;
+    color: #000;
+
+}
+.topnav a.active{
+    background-color: blueviolet;
+    color: #000;
+}
+    </style>
+</head>
+<body style="text-align: center;">
+   <div class="topnav">
+<a class="active" href="#home">Home</a>
+<a href="about.html">About us</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact us</a>
+   </div> 
+   <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+   <h1>Rohaan Travels</h1>
+    </div>
+    <p>Complete holiday plan.</p>
+   </div>
+   <section>
+   <img src="https://live.worldtourismforum.net/uploads/global-trends-2024.webp" alt="" style="width: 400px;">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwq2cwHPJu1C3cOIsDLBUmo20YzzRqEJCoFw&s" alt="" style="width: 400px;">
+</section>
+<script>
+var myIndex = 0;
+carousel()
+function carousel(){
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+for (let i = 0; i < x.length; i++) {
+    x[i].style.display ="none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>
